@@ -3,26 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-.header__all {
-    justify-content: center;
-    margin: auto;
-    text-align: center;
+.header {
+    padding:1rem 0 ;
 }
-.contaier {
-    max-width: 70vh;
+img {
+    max-width: 100%;
+    max-height:100%;
+}
+.container {
+    max-width: 1075px;
+    margin:0 auto;
 }
 
-#header {
-    display: flex;
-}
 .header_items { 
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+align-items: center;
 }
 .header__item {
     list-style: none;
     
+}
+.logo {
+    display: flex;
+    align-items:center;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
 }
 .header__item-link {
     text-decoration: none;
@@ -30,26 +38,16 @@
     font-size: 14px;
     text-transform: uppercase;
     padding-left: 20px;
-    padding-right: 20px;    
+    padding-right: 20px;   
+    transition: .3s; 
 }
-#home {
+.header__item-link:hover {
     background-color: #ffbb42;
-    padding-top: 10px;
-    padding-bottom: 10px;   
-    color: #fff;
+padding-top: 10px;
+padding-bottom: 10px;   
+color: #fff;
 }
-.boost_up {
-    background-color: #709dca;
-    height: 590px;
-    padding-top: 100px;
-    
-}
-#jcc {
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-}
-#h1_boost {
+.boost_up-items {
     color: #ffffff;
     font-family: "Open Sans";
     line-height: 24px;
@@ -60,7 +58,7 @@
     line-height: normal;
     text-transform: uppercase;
 }
-#p_boost {
+.boost_up-p {
     color: #ffffff;
     font-family: "Open Sans";
     line-height: 24px;
@@ -72,9 +70,19 @@
     line-height: normal;
     padding-bottom: 30px;
 }
+
+.notebook {
+    padding-top: 100px;
+    padding-bottom: 400px;
+    background-color: #709dca;
+    position: relative;
+}
 .input {
     padding: 15px;
     margin: 5px;
+}
+.input__parent {
+    text-align: center;
 }
 #Request_a_quote {
     text-decoration: none;
@@ -88,7 +96,12 @@
 .cervice {
     height: 925px;
 }
-.notebook__ {
-    background-image: url(/images/Vector_Smart_Object.svg);
-    background-repeat: no-repeat;
+.notebook__comp {
+    width:300px;
+    height:300px;
+    background: url('../images/Vector_Smart_Object.svg') no-repeat center center / cover;
+    position: absolute;
+    bottom:-100px;
+    right:50%;
+    transform: translateX(50%);
 }
